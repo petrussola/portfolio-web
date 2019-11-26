@@ -30,7 +30,6 @@ export default function Footer() {
     <div className={classes.root}>
       <div className={classes.container}>
         <ContactDetails />
-
         <ContactForm />
       </div>
     </div>
