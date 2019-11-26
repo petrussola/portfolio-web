@@ -10,11 +10,10 @@ const useStyles = makeStyles({
     "flex-direction": "column",
     background: "red"
   },
-  formItem: {
-    background: "purple",
-    display: "flex",
-    "flex-direction": "row",
-    "justify-content": "flex-start"
+  field: {
+    height: "50px",
+    "font-size": "1rem",
+    padding: '1rem'
   }
 });
 
@@ -23,18 +22,24 @@ export default function ContactUsForm() {
   return (
     <>
       <Form className={classes.form}>
-        <label className={classes.formItem}>
-          Name:
-          <Field name="name" type="text" placeholder="Name" />
-        </label>
-        <label className={classes.formItem}>
-          Email:
-          <Field name="email" type="email" placeholder="Email" />
-        </label>
-        <label className={classes.formItem}>
-          Text:
-          <Field name="message" as="textarea" placeholder="Text" />
-        </label>
+        <Field
+          name="name"
+          type="text"
+          placeholder="Name"
+          className={classes.field}
+        />
+        <Field
+          name="email"
+          type="email"
+          placeholder="Email"
+          className={classes.field}
+        />
+        <Field
+          name="message"
+          as="textarea"
+          placeholder="Text"
+          className={classes.field}
+        />
         <button type="submit">Submit</button>
       </Form>
     </>
