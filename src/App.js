@@ -3,12 +3,13 @@ import "./App.css";
 import { Route } from "react-router-dom";
 
 // IMPORT COMPONENTS
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import ContactSection from "./components/ContactSection";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
 import ContactPage from "./components/ContactPage";
 import Project from "./components/Project";
+import Center from "./components/Center";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" component={Header} />
       <Route path="/" component={ContactSection} />
       <Route exact path="/" component={HomePage} />
+      <Route exact path="/" component={Center} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/projects/:id" component={Project} />
