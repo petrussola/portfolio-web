@@ -1,7 +1,7 @@
 import React from "react";
 
 // COMPONENTS
-import ContactForm from "./ContactForm";
+import ContactForm from "./FormContainer";
 import ContactDetails from "./ContactDetails";
 
 // MATERIAL UI

@@ -1,5 +1,6 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import ContactUsForm from "./ContactUsForm";
 
 // MATERIAL UI
 import { makeStyles } from "@material-ui/core/styles";
@@ -29,27 +30,5 @@ export default function ContactForm() {
         component={ContactUsForm}
       />
     </div>
-  );
-}
-
-function ContactUsForm() {
-  return (
-    <>
-      <Form>
-        <label>
-          Name:
-          <Field type="text" name="name" placeholder="Name" />
-        </label>
-        <label>
-          Email:
-          <Field type="text" name="email" placeholder="Email" />
-        </label>
-        <label>
-          Text:
-          <Field type="text" name="message" placeholder="Text" />
-        </label>
-        <button type="submit">Submit</button>
-      </Form>
-    </>
   );
 }
