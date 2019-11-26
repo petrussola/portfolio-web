@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // MATERIAL UI
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -20,9 +21,9 @@ export default function NavBar() {
   return (
     <div className={classes.root}>
       <ul className={classes.menuItems}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <Link to='/'><li>Home</li></Link>
+        <Link to='/about'><li>About</li></Link>
+        <Link to='/contact'><li>Contact</li></Link>
       </ul>
     </div>
   );
