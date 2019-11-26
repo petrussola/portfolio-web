@@ -1,13 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <h1>This is a beautiful website</h1>
-      <h2>This is a beautiful website</h2>
-      <h3>This is a beautiful website</h3>
-      <h4>This is a beautiful website</h4>
+      <Route path="/" component={Header} />
+      <Route path="/" component={Contact} />
+      <Route exact path="/" component={HomePage} />
+      <Route path="/about" component={About} />
+      <Route path="/projects/:id" component={Project} />
     </div>
   );
 }
