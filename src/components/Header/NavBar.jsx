@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   root: {
     background: "purple",
-    width: "50%"
+    width: "40%"
   },
   menuItems: {
     background: "red",

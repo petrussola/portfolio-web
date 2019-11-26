@@ -11,7 +11,9 @@ const useStyles = makeStyles({
     display: "flex",
     "flex-direction": "row",
     "align-items": "center",
-    height: "150px"
+    "justify-content": "space-between",
+    height: "150px",
+    padding: "75px"
   }
 });
 
