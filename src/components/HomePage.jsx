@@ -62,7 +62,7 @@ export default function HomePage() {
                   className={classes.icon}
                   size={"medium"}
                 >
-                  <Link to={`/project/${project.id}`}>
+                  <Link to={`/projects/${project.id}`}>
                     <PageviewIcon />
                   </Link>
                 </IconButton>
