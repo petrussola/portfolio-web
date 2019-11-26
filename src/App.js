@@ -4,22 +4,20 @@ import { Route } from "react-router-dom";
 
 // IMPORT COMPONENTS
 import Header from "./components/Header/Header";
-import ContactSection from "./components/ContactSection";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
-import ContactPage from "./components/ContactPage";
 import Project from "./components/Project";
 import Center from "./components/Center";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Route path="/" component={Header} />
-      <Route path="/" component={ContactSection} />
       <Route exact path="/" component={Center} />
       <Route exact path="/" component={HomePage} />
+      <Route path="/" component={Footer} />
       <Route path="/about" component={About} />
-      <Route path="/contact" component={ContactPage} />
       <Route path="/projects/:id" component={Project} />
     </div>
   );

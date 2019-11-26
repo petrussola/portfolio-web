@@ -60,10 +60,10 @@ export default function HomePage() {
                 <IconButton
                   aria-label={`star ${project.title}`}
                   className={classes.icon}
-                  size={'medium'}
+                  size={"medium"}
                 >
                   <Link to={`/project/${project.id}`}>
-                    <PageviewIcon  disabled={true}/>
+                    <PageviewIcon />
                   </Link>
                 </IconButton>
               }
