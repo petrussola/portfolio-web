@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="App">
       <Route path="/" component={Header} />
-      <Route exact path="/" component={Center} />
+      <Route path="/" component={Center} />
       <Route exact path="/" component={HomePage} />
-      <Route path="/" component={Footer} />
       <Route path="/about" component={About} />
       <Route path="/projects/:id" component={Project} />
+      <Route path="/" component={Footer} />
     </div>
   );
 }
