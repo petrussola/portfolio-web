@@ -5,11 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    background: "purple",
     width: "40%"
   },
   menuItems: {
-    background: "red",
     display: "flex",
     "flex-direction": "row",
     "justify-content": "space-around"
@@ -21,9 +19,21 @@ export default function NavBar() {
   return (
     <div className={classes.root}>
       <ul className={classes.menuItems}>
-        <Link to='/'><li>Home</li></Link>
-        <Link to='/about'><li>About</li></Link>
-        <Link to='/contact'><li>Contact</li></Link>
+        <Link to="/">
+          <li>
+            <h4 className={"bold"}>HOME</h4>
+          </li>
+        </Link>
+        <Link to="/about">
+          <li>
+            <h4 className={"bold"}>ABOUT</h4>
+          </li>
+        </Link>
+        <Link to="/contact">
+          <li>
+            <h4 className={"bold"}>CONTACT</h4>
+          </li>
+        </Link>
       </ul>
     </div>
   );

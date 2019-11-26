@@ -6,7 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    background: "yellow",
     width: "60%",
     display: 'flex',
     'flex-direction': 'row',

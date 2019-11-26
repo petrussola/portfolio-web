@@ -7,13 +7,13 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    background: "red",
     display: "flex",
     "flex-direction": "row",
     "align-items": "center",
     "justify-content": "space-between",
-    height: "150px",
-    padding: "75px"
+    // height: "100px",
+    padding: "25px 75px",
+    // 'border-bottom': '1px solid black'
   }
 });
 

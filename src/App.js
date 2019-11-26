@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
 import Project from "./components/Project";
-import Center from "./components/Center";
+import Center from "./components/Header/Center";
 import Footer from "./components/Footer/Footer";
 
 function App() {
