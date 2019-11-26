@@ -16,7 +16,7 @@ export default function DescriptionMe() {
   return (
     <div className={classes.root}>
       <h3>2 CENTS ABOUT ME</h3>
-      <p className={"justify"}>
+      <p className={"justify spacedlines"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
         sollicitudin feugiat quam, vitae condimentum lacus. Sed molestie posuere
         est, eget lobortis urna consequat ut. Aliquam erat volutpat. Vivamus ut
@@ -28,7 +28,7 @@ export default function DescriptionMe() {
       </p>
 
       <h3>LANGUAGES & FRAMEWORKS</h3>
-      <p className={"center"}>
+      <p className={"center spacedlines"}>
         HTML | CSS | Javascript | React | Node | Express | Relational Databases
       </p>
     </div>

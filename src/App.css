@@ -52,3 +52,7 @@ p {
 .center {
   text-align: center;
 }
+
+.spacedlines {
+  line-height: 1.6;
+}

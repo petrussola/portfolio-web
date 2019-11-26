@@ -17,7 +17,7 @@ const initialValues = {
   message: ""
 };
 
-export default function ContactForm() {
+export default function FormContainer() {
   const submitFormHandler = values => {
     console.log(values);
   };

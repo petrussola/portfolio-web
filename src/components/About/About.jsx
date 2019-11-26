@@ -16,7 +16,8 @@ const useStyles = makeStyles({
   container: {
     padding: '25px',
     display: "flex",
-    "flex-direction": "row"
+    "flex-direction": "row",
+    'align-items': 'center'
   }
 });
 

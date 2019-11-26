@@ -1,7 +1,7 @@
 import React from "react";
 
 // COMPONENTS
-import ContactForm from "./FormContainer";
+import FormContainer from "./FormContainer";
 import ContactDetails from "./ContactDetails";
 
 // MATERIAL UI
@@ -27,10 +27,10 @@ const useStyles = makeStyles({
 export default function Footer() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id={'test'}>
       <div className={classes.container}>
         <ContactDetails />
-        <ContactForm />
+        <FormContainer />
       </div>
     </div>
   );

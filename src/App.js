@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Project from "./components/Project";
 import Center from "./components/Header/Center";
 import Footer from "./components/Footer/Footer";
+import ContactPage from "./components/Contact/ContactPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/" component={Center} />
       <Route exact path="/" component={HomePage} />
       <Route path="/about" component={About} />
+      <Route path="/contact" component={ContactPage} />
       <Route path="/projects/:id" component={Project} />
       <Route path="/" component={Footer} />
     </div>
