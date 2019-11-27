@@ -6,9 +6,10 @@ import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles(theme => ({
   root: {
+    margin: theme.spacing(3, 2),
     padding: theme.spacing(3, 2),
     width: "50%",
-    height: "300px",
+    height: "auto",
     display: "flex",
     "flex-direction": "column",
     "justify-content": "center",
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 export default function ProjectImage({ selectedProject }) {
   const classes = useStyles();
   return (
-    <Paper className={classes.root}>
+    <Paper className={classes.root} elevation="24">
       <div>
         <img
           src={selectedProject.img}

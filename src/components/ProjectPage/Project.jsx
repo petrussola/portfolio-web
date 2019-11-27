@@ -8,16 +8,16 @@ import ProjectsData from "../../database/Projects";
 // MATERIAL UI
 import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
+    margin: theme.spacing(3, 2),
     display: "flex",
-    "flex-direction": "row",
-    background: "#F5F5F5"
+    "flex-direction": "row"
   },
   imageContainer: {
     width: "50%"
   }
-});
+}));
 
 export default function Project(props) {
   const classes = useStyles();
@@ -26,7 +26,7 @@ export default function Project(props) {
     return item.id === Number(id);
   });
   return (
-    <div className={`${classes.root} containerMainPage`}>
+    <div className={classes.root}>
       <ProjectImage selectedProject={selectedProject} />
       <ProjectDescription selectedProject={selectedProject} />
     </div>
