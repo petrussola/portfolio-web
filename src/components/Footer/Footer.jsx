@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // COMPONENTS
 import FormContainer from "./FormContainer";
@@ -25,12 +25,13 @@ const useStyles = makeStyles({
 });
 
 export default function Footer() {
+  const [inFooter, setInFooter] = useState(true);
   const classes = useStyles();
   return (
-    <div className={classes.root} id={'test'}>
+    <div className={classes.root} id={"test"}>
       <div className={classes.container}>
         <ContactDetails />
-        <FormContainer />
+        <FormContainer inFooter={inFooter} />
       </div>
     </div>
   );

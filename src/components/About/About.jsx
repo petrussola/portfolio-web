@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 export default function About() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} containerMainPage`}>
       <h1 className={'pinky'}>PERE SOLÀ CLAVER</h1>
       <div className={classes.container}>
         <ProfilePhoto />

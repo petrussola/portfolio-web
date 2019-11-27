@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactDetails from "./ContactDetails";
 import FormContainer from "../Footer/FormContainer";
 
@@ -15,9 +15,10 @@ const useStyles = makeStyles({
 });
 
 export default function ContactPage() {
+
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} containerMainPage`}>
       <ContactDetails />
       <FormContainer />
     </div>

@@ -7,17 +7,23 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   form: {
     display: "flex",
-    "flex-direction": "column",
-    background: "red"
+    "flex-direction": "column"
   },
   field: {
     height: "50px",
     "font-size": "1rem",
-    padding: '1rem'
+    padding: "1rem",
+    margin: "0.5rem"
+  },
+  submitButton: {
+    "background-color": "white",
+    color: "#f26bac",
+    "text-decoration": "none",
+    "font-weight": "bold"
   }
 });
 
-export default function ContactUsForm() {
+export default function ContactUsForm({ inFooter }) {
   const classes = useStyles();
   return (
     <>
@@ -40,7 +46,14 @@ export default function ContactUsForm() {
           placeholder="Text"
           className={classes.field}
         />
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          className={`${classes.field} ${classes.submitButton} ${
+            inFooter ? "submitButtonFooter" : "submitButtonPage"
+          }`}
+        >
+          SUBMIT
+        </button>
       </Form>
     </>
   );

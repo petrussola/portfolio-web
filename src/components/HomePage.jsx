@@ -18,8 +18,6 @@ const useStyles = makeStyles(theme => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
-    padding: "50px",
-    //   background: "brown",
     backgroundColor: theme.palette.background.paper
   },
   gridList: {
@@ -39,7 +37,7 @@ const useStyles = makeStyles(theme => ({
 export default function HomePage() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} containerMainPage`}>
       <GridList
         cellHeight={300}
         className={classes.gridList}

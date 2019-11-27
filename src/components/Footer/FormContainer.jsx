@@ -17,7 +17,7 @@ const initialValues = {
   message: ""
 };
 
-export default function FormContainer() {
+export default function FormContainer({ inFooter }) {
   const submitFormHandler = values => {
     console.log(values);
   };
@@ -27,7 +27,7 @@ export default function FormContainer() {
       <Formik
         initialValues={initialValues}
         onSubmit={submitFormHandler}
-        component={ContactUsForm}
+        children={props => <ContactUsForm {...props} inFooter={inFooter} />}
       />
     </div>
   );

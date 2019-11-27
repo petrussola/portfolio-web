@@ -49,5 +49,5 @@ export default function ContactDetails() {
 }
 
 function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
+  return <ListItem button component="a" selected={false} {...props} />;
 }
