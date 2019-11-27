@@ -1,26 +1,23 @@
 import React from "react";
+import ProjectImage from "./ProjectImage";
+import ProjectDescription from "./ProjectDescription";
 
 // PROJECT DATA
-import ProjectsData from "../database/Projects";
+import ProjectsData from "../../database/Projects";
 
 // MATERIAL UI
 import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
+    margin: theme.spacing(3, 2),
     display: "flex",
     "flex-direction": "row"
   },
   imageContainer: {
     width: "50%"
-  },
-  image: {
-    width: "50%"
-  },
-  text: {
-    width: "50%"
   }
-});
+}));
 
 export default function Project(props) {
   const classes = useStyles();
@@ -30,17 +27,8 @@ export default function Project(props) {
   });
   return (
     <div className={classes.root}>
-      <div className={classes.imageContainer}>
-        <img
-          src={selectedProject.img}
-          alt={selectedProject.title}
-          className={classes.image}
-        />
-      </div>
-      <div className={classes.text}>
-        <h1>{selectedProject.title}</h1>
-        <p>{selectedProject.description}</p>
-      </div>
+      <ProjectImage selectedProject={selectedProject} />
+      <ProjectDescription selectedProject={selectedProject} />
     </div>
   );
 }

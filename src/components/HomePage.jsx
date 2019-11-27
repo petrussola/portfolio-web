@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
   },
   icon: {
     color: "white"
+  },
+  image: {
+    width: "100%"
   }
 }));
 
@@ -50,7 +53,11 @@ export default function HomePage() {
             cols={project.cols || 1}
             rows={project.rows || 1}
           >
-            <img src={project.img} alt={project.title} />
+            <img
+              src={project.img}
+              alt={project.title}
+              className={classes.image}
+            />
             <GridListTileBar
               title={project.title}
               titlePosition="top"
