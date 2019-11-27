@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 export default function ProjectImage({ selectedProject }) {
   const classes = useStyles();
   return (
-    <Paper className={classes.root} elevation="24">
+    <Paper className={classes.root} elevation="2">
       <div>
         <img
           src={selectedProject.img}
