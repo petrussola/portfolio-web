@@ -53,7 +53,7 @@ const ProjectData = [
     title: "I'll Server Soup - Kitchen Management App - Marketing Page",
     description:
       "This project was part of the build week for the HTML and CSS module. I had loads of fun playing with the CSS properties.",
-    url: null,
+    url: 'https://serene-payne-572ed8.netlify.com/',
     repo: 'https://github.com/petrussola/web-ui-pere',
     tech: 'HTML, CSS',
     cols: 2,
