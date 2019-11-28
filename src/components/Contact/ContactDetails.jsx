@@ -2,7 +2,6 @@ import React from "react";
 
 // MATERIAL UI
 import { makeStyles } from "@material-ui/core";
-import ListItem from "@material-ui/core/ListItem";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";

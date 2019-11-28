@@ -24,6 +24,11 @@ export default function NavBar() {
             <h4 className={"bold"}>HOME</h4>
           </li>
         </Link>
+        <Link to="/projects/1">
+          <li>
+            <h4 className={"bold"}>PROJECTS</h4>
+          </li>
+        </Link>
         <Link to="/about">
           <li>
             <h4 className={"bold"}>ABOUT</h4>
