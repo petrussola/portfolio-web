@@ -16,8 +16,10 @@ const ProjectData = [
     img: "https://i.imgur.com/YFViMUy.png",
     title: "Rick & Morty Fan Page",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquam orci, sed viverra odio. Duis aliquam leo id mollis luctus. Nam id nisl purus. Duis mauris enim, tincidunt id maximus nec, eleifend consectetur enim. Cras scelerisque, ex cursus porta pulvinar, leo turpis sagittis augue, id fermentum nibh nisi sed.",
+      "I built this project as a wrap up of the sprint on React. It pulls data from a public database and displays, on the one hand, all characters, and on the other hand, characters whose name matches the search. Never watched this show though, should give it a try at least!",
     url: "https://sprint-challenge-single-page-apps.peresolaclaver.now.sh/",
+    repo: 'https://github.com/petrussola/Sprint-Challenge-Single-Page-Apps',
+    tech: 'React, Axios',
     cols: 2,
     rows: 2
   },
@@ -26,8 +28,10 @@ const ProjectData = [
     img: "https://i.imgur.com/NzvRHTK.png",
     title: "Star Wars API app",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquam orci, sed viverra odio. Duis aliquam leo id mollis luctus. Nam id nisl purus. Duis mauris enim, tincidunt id maximus nec, eleifend consectetur enim. Cras scelerisque, ex cursus porta pulvinar, leo turpis sagittis augue, id fermentum nibh nisi sed.",
+      "First project using React! With Hooks: useState, useEffect, etc. it sounded a bit intimidating back then.",
     url: null,
+    repo: 'https://github.com/petrussola/Sprint-Challenge-React-Wars',
+    tech: 'React, Axios',
     cols: 1,
     rows: 2
   },
@@ -36,8 +40,10 @@ const ProjectData = [
     img: "https://i.imgur.com/8rISTOo.png",
     title: "Women's World Cup Football search",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquam orci, sed viverra odio. Duis aliquam leo id mollis luctus. Nam id nisl purus. Duis mauris enim, tincidunt id maximus nec, eleifend consectetur enim. Cras scelerisque, ex cursus porta pulvinar, leo turpis sagittis augue, id fermentum nibh nisi sed.",
+      "Built this one with Class Components and Custom Hooks. And it has integration tests! :D",
     url: null,
+    repo: 'https://github.com/petrussola/Sprint-Challenge-Advanced-React',
+    tech: 'React, Axios',
     cols: 1,
     rows: 1
   },
@@ -46,8 +52,10 @@ const ProjectData = [
     img: "https://i.imgur.com/XvTo2Ma.png",
     title: "I'll Server Soup - Kitchen Management App - Marketing Page",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquam orci, sed viverra odio. Duis aliquam leo id mollis luctus. Nam id nisl purus. Duis mauris enim, tincidunt id maximus nec, eleifend consectetur enim. Cras scelerisque, ex cursus porta pulvinar, leo turpis sagittis augue, id fermentum nibh nisi sed.",
-    url: null,
+      "This project was part of the build week for the HTML and CSS module. I had loads of fun playing with the CSS properties.",
+    url: 'https://serene-payne-572ed8.netlify.com/',
+    repo: 'https://github.com/petrussola/web-ui-pere',
+    tech: 'HTML, CSS',
     cols: 2,
     rows: 1
   }

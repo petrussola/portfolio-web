@@ -8,8 +8,9 @@ import Copyright from "./Copyright";
 // MATERIAL UI
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
+    padding: theme.spacing(2, 3),
     background: "black",
     color: "white",
     width: "100%",
@@ -23,12 +24,11 @@ const useStyles = makeStyles({
     "align-items": "center",
     height: "inherit"
   }
-});
+}));
 
 export default function Footer(props) {
   const [inFooter, setInFooter] = useState(true);
   const classes = useStyles();
-  debugger;
   if (props.location.pathname === "/contact") {
     return (
       <div className={classes.root} id={"test"}>
