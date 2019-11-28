@@ -29,7 +29,6 @@ const useStyles = makeStyles(theme => ({
 export default function Footer(props) {
   const [inFooter, setInFooter] = useState(true);
   const classes = useStyles();
-  debugger;
   if (props.location.pathname === "/contact") {
     return (
       <div className={classes.root} id={"test"}>

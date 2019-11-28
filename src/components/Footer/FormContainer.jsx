@@ -19,12 +19,12 @@ const initialValues = {
 };
 
 export default function FormContainer({ inFooter }) {
-  const submitFormHandler = values => {
-    console.log(values);
+  const submitFormHandler = (values, action) => {
     axios
       .post("http://localhost:4400/contact", values)
       .then(data => {
-        debugger;
+        alert("form has been sent");
+        action.resetForm();
       })
       .catch(error => {
         debugger;
