@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     height: "50px",
     "font-size": "1rem",
     padding: "1rem",
-    margin: "0.5rem"
+    margin: "0.2rem"
   },
   submitButton: {
     "background-color": "white",
